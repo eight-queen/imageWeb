@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {{image_name}} uploaded
+    <img src=" {{url_for('send_image', filename=image_name)}}">
+    <div class="navbar">
+        <ul class="nav">
+  		    <li><a th:href="@{/}" href="index">Home</a></li>
+  		    <li><a th:href="@{/logout}" href="logout">Logout</a></li>
+        </ul>
+    </div>
+</body>
+</html>
